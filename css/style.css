@@ -1,6 +1,78 @@
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Luxurious Script', cursive;
     font-family: 'Meow Script', cursive;
     font-family: 'Outfit', sans-serif;
     font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bolder;
+}
+
+:root {
+    --color1: #20352a;
+    --color2: #92bead;
+}
+
+header,
+footer,
+section {
+    padding: 100px 0;
+}
+
+header {
+    padding: 200px 0;
+}
+
+header,
+footer {
+    background-color: var(--color1);
+    background: url(../img/header.png), linear-gradient(to right, var(--color1) 20%, var(--color2) 100%);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.itd-play {
+    height: 60px;
+    width: 60px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 30px auto 30px;
+    transition: all 0.2s ease;
+}
+
+.itd-play:hover {
+    background-color: var(--color1);
+}
+
+.itd-triangle {
+    margin-right: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent white;
+}
+
+.btn-itd {
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+    border-bottom: 4px solid black;
+    padding: 5px 10px;
+    background-color: var(--color1);
+    color: white;
+}
+
+.btn-itd:hover {
+    background-color: var(--color2);
+    color: slategray;
 }
